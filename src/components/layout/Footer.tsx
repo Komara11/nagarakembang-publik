@@ -128,7 +128,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <div className="pt-8 border-t border-slate-800 flex flex-col lg:flex-row justify-between items-center gap-6 text-center lg:text-left">
           <div className="flex flex-col gap-1">
             <p className="font-body-md text-sm text-slate-500">
               © {new Date().getFullYear()} Pemerintah Desa {settings?.namaWebsite || "Nagara Kembang"}. Seluruh Hak Cipta Dilindungi.
@@ -137,6 +137,13 @@ export function Footer() {
               Developed by <a href="https://rahesa-komara-r7o2.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-primary-container transition-colors">Komara</a> from <a href="https://www.clovercode.shop" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-primary-container transition-colors">Clovercode</a>
             </p>
           </div>
+          
+          <div className="flex items-center gap-5 my-2 lg:my-0">
+            <img src="/logo.png" alt="Logo Desa" className="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+          </div>
+
           <div className="flex items-center gap-6">
             <Link href="#" className="font-body-md text-sm text-slate-500 hover:text-primary transition-colors">
               Kebijakan Privasi

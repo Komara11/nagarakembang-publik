@@ -26,10 +26,6 @@ export default function KKMPage() {
       <section className="relative w-full h-[350px] min-h-[300px] flex items-center justify-center bg-surface-container-high border-b border-outline-variant">
         <div className="absolute inset-0 bg-primary/5"></div>
         <SlideUp className="relative z-10 text-center px-margin-mobile md:px-margin-desktop text-on-surface" delay={0.2}>
-          <div className="flex justify-center gap-6 mb-6 items-center">
-            <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-20 w-20 object-contain drop-shadow-md" />
-            <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-20 w-20 object-contain drop-shadow-md" />
-          </div>
           <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-sm text-primary">
             Tim KKM Desa Nagarakembang
           </h1>
