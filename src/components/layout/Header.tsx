@@ -28,6 +28,7 @@ const NAV_LINKS = [
       { href: "/profil/demografi", label: "Demografi Penduduk" },
       { href: "/informasi/pengumuman", label: "Pengumuman Resmi" },
       { href: "/informasi/kkm", label: "Tim KKM" },
+      { href: "/informasi/galeri", label: "Galeri & Media" },
     ]
   },
   { href: "/potensi", label: "Potensi Desa" },
