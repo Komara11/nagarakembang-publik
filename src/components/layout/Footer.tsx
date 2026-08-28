@@ -12,7 +12,7 @@ export function Footer() {
           {/* Brand & Deskripsi */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-[36px]">account_balance</span>
+              <img src="/logo.png" alt="Logo Desa" className="w-10 h-10 object-contain" />
               <span className="font-display-lg text-headline-md font-bold text-white tracking-tight">
                 {settings?.namaWebsite ? (
                   <>

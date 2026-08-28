@@ -68,7 +68,7 @@ export function Header() {
     <header className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 transition-all duration-300 ${isSolid ? 'bg-surface/95 backdrop-blur-md dark:bg-on-background/95 shadow-sm' : 'bg-transparent shadow-none'}`} id="main-nav">
       {/* Brand / Logo (Clickable to refresh/home) */}
       <a href="/" className="flex items-center gap-2 group cursor-pointer hover:opacity-80 transition-opacity">
-        <span className={`material-symbols-outlined text-[32px] group-hover:rotate-12 transition-transform duration-300 ${isSolid ? 'text-primary dark:text-primary-fixed' : 'text-white'}`}>account_balance</span>
+        <img src="/logo.png" alt="Logo Desa" className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300" />
         <span className={`font-display-lg text-title-lg font-bold ${isSolid ? 'text-primary dark:text-primary-fixed' : 'text-white'}`}>Nagarakembang</span>
       </a>
 

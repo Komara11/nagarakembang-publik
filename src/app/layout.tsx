@@ -16,8 +16,30 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Desa Nagarakembang",
-  description: "Website Publik Resmi Desa Nagarakembang",
+  title: "Desa Nagarakembang - Website Resmi Pemerintah Desa",
+  description: "Selamat datang di website resmi Desa Nagarakembang. Pusat informasi layanan masyarakat, pemerintahan, potensi desa, dan berita terkini seputar Desa Nagarakembang.",
+  keywords: ["Desa Nagarakembang", "Pemerintah Desa Nagarakembang", "Website Desa", "Informasi Desa", "Layanan Desa Nagarakembang", "Profil Desa Nagarakembang"],
+  openGraph: {
+    title: "Desa Nagarakembang - Website Resmi",
+    description: "Website resmi pelayanan dan informasi Desa Nagarakembang.",
+    url: "https://nagarakembang.desa.id",
+    siteName: "Desa Nagarakembang",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Logo Desa Nagarakembang",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
