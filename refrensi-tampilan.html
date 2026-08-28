@@ -1,0 +1,1352 @@
+<!-- Beranda - Desa Nagara Kembang -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beranda - Desa Nagara Kembang</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#adc4ff",
+                      "tertiary-container": "#184da7",
+                      "on-tertiary-fixed-variant": "#00429c",
+                      "background": "#f7f9fb",
+                      "surface-dim": "#d8dadc",
+                      "inverse-primary": "#91d78a",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "on-secondary-container": "#684000",
+                      "secondary-fixed": "#ffddb8",
+                      "primary-container": "#1b5e20",
+                      "on-primary-fixed-variant": "#0c5216",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#2a6b2c",
+                      "on-surface-variant": "#41493e",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "surface-container": "#eceef0",
+                      "on-secondary": "#ffffff",
+                      "secondary": "#855300",
+                      "surface-container-low": "#f2f4f6",
+                      "on-secondary-fixed": "#2a1700",
+                      "tertiary": "#003683",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "primary-fixed-dim": "#91d78a",
+                      "on-tertiary-fixed": "#001945",
+                      "outline": "#717a6d",
+                      "error": "#ba1a1a",
+                      "outline-variant": "#c0c9bb",
+                      "on-background": "#191c1e",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#002203",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface": "#f7f9fb",
+                      "tertiary-fixed-dim": "#b0c6ff",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#fea619",
+                      "on-surface": "#191c1e",
+                      "surface-bright": "#f7f9fb",
+                      "surface-container-lowest": "#ffffff",
+                      "primary": "#00450d",
+                      "inverse-surface": "#2d3133",
+                      "primary-fixed": "#acf4a4",
+                      "tertiary-fixed": "#d9e2ff",
+                      "surface-variant": "#e0e3e5",
+                      "on-primary-container": "#90d689"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "80px",
+                      "stack-lg": "32px",
+                      "stack-md": "16px",
+                      "margin-desktop": "48px",
+                      "stack-sm": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "headline-md-mobile": [
+                              "Montserrat"
+                      ],
+                      "title-lg": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-surface/90 backdrop-blur-md dark:bg-on-background/90 shadow-sm transition-all duration-300" id="main-nav">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-3xl" data-weight="fill">temple_hindu</span>
+<span class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed">Desa Nagara Kembang</span>
+</div>
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="font-body-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary font-bold pb-1 opacity-80 transition-all hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Beranda</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Profil</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pemerintahan</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Informasi</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Potensi</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pelayanan</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center bg-surface-container-low rounded-full px-4 py-2 border border-outline-variant focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 outline-none" placeholder="Cari..." type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-md font-label-md text-label-md hover:bg-surface-tint hover:-translate-y-0.5 transition-all shadow-[0_4px_20px_rgba(27,94,32,0.15)]">Kontak</button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] min-h-[600px] flex items-center">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full z-0" data-alt="A breathtaking, wide-angle landscape photograph of a lush Indonesian village at sunrise. Terraced rice fields glow with fresh green hues under soft, golden morning light. Mist lightly hugs the distant volcanic mountains. The aesthetic is corporate-modern yet deeply tactile and natural, conveying warmth, prosperity, and trustworthiness. High resolution, clear sky." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVx2vtOyvHygY1_AQWh8NiyWDSyIpKJLCeg7JCpcV-zsHhewNUv90_7gcQi6v1KEv15zx8AOFKIHTrEzgCNtWsQwTken8J3sfZHxN4E8jxoL_AdPLWVTjgDRfO4vIMub_9jCxhWKaS1eEhHsaLwYHrGNbnerldNxAcKMKNYNgL2ph06UUp6aOwDaVszbhiasz1uQpMExODKObvgYKOz62NRQvufzVAuLV77Nh0Z_q9HY2SEP55Rl4B')"></div>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply z-10"></div>
+<div class="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-on-primary">
+<div class="max-w-2xl flex flex-col gap-stack-md">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-shadow">Selamat Datang di Website Resmi Desa Nagara Kembang</h1>
+<p class="font-body-lg text-body-lg text-shadow opacity-90">Media informasi dan pelayanan digital Pemerintah Desa Nagara Kembang</p>
+<div class="flex flex-wrap gap-4 mt-stack-sm">
+<button class="bg-secondary text-on-secondary-fixed px-8 py-3 rounded-md font-label-md text-label-md hover:bg-secondary-container transition-all shadow-[0_4px_20px_rgba(133,83,0,0.2)] hover:-translate-y-1">Tentang Desa</button>
+<button class="bg-surface text-primary px-8 py-3 rounded-md font-label-md text-label-md hover:bg-surface-container-low transition-all shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:-translate-y-1">Layanan Desa</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Sambutan Kepala Desa Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-section-gap items-center bg-surface-container-lowest p-stack-lg rounded-xl shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-container-low">
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="relative w-64 h-64 rounded-xl overflow-hidden shadow-md">
+<img class="object-cover w-full h-full" data-alt="A professional, warm portrait photograph of an Indonesian village head (Kepala Desa) in official khaki uniform. The lighting is soft and flattering, set against a subtle, out-of-focus background of a traditional village office or green foliage. The expression is welcoming, trustworthy, and authoritative. Corporate-modern style, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBexCtQ1bSzIG3KvAFYpMGHgvgi72rkdqulhDhUDTJpKJgp5Ksil1V2RtsuU8lNa8iRx6iGKtGK9P4i1DGHk0vD4lCLXB2sRZe6ZI3G19AueS1KKuYx4Heu39QIr0zHcZ-r4BBPNt3bH2VqjBMdC3tX64XAxErO4s-7dvMC-BgAAdnX59_nnH4yNuZUuHlJu1riGcUFY5ED2FHZF56iCE0iOiuW5ppr7f2eHf_9fRMLtAllLb-D71jz"/>
+</div>
+</div>
+<div class="w-full md:w-2/3 flex flex-col gap-stack-md">
+<div class="flex items-center gap-2">
+<span class="w-12 h-1 bg-secondary rounded-full"></span>
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase">Sambutan</span>
+</div>
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-primary">Bapak Budi Santoso</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-bold">Kepala Desa Nagara Kembang</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            "Assalamu'alaikum Warahmatullahi Wabarakatuh. Selamat datang di portal resmi Desa Nagara Kembang. Website ini kami hadirkan sebagai wujud komitmen transparansi, keterbukaan informasi, serta upaya peningkatan kualitas pelayanan publik bagi seluruh warga. Melalui platform digital ini, kami berharap potensi desa dapat lebih dikenal luas, dan warga dapat dengan mudah mengakses berbagai layanan administrasi maupun informasi terkini seputar pembangunan desa."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistik Desa -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto flex flex-col gap-stack-lg">
+<div class="text-center flex flex-col items-center gap-2">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase">Data Terkini</span>
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-on-background">Statistik Desa</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-xl shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-container-low flex flex-col items-center text-center group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="groups">groups</span>
+</div>
+<span class="font-display-lg text-title-lg md:text-display-lg-mobile text-primary font-bold">3,250</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">Total Penduduk</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-xl shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-container-low flex flex-col items-center text-center group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="house">house</span>
+</div>
+<span class="font-display-lg text-title-lg md:text-display-lg-mobile text-primary font-bold">850</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">Jumlah KK</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-xl shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-container-low flex flex-col items-center text-center group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="man">man</span>
+</div>
+<span class="font-display-lg text-title-lg md:text-display-lg-mobile text-primary font-bold">1,610</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">Laki-laki</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-stack-md rounded-xl shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-container-low flex flex-col items-center text-center group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="woman">woman</span>
+</div>
+<span class="font-display-lg text-title-lg md:text-display-lg-mobile text-primary font-bold">1,640</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">Perempuan</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-surface-container-highest dark:bg-on-background bg-surface-container-highest dark:bg-surface-container flat no shadows">
+<div class="flex flex-col gap-stack-md col-span-1 md:col-span-2">
+<span class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed">Desa Nagara Kembang</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Pemerintah Desa Nagara Kembang. Seluruh Hak Cipta Dilindungi.</p>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-title-lg text-title-lg text-on-surface font-bold mb-2">Tautan Pantas</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary w-fit" href="#">Kebijakan Privasi</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary w-fit" href="#">Syarat &amp; Ketentuan</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-title-lg text-title-lg text-on-surface font-bold mb-2">Bantuan &amp; Navigasi</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary w-fit" href="#">Peta Situs</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary w-fit" href="#">Bantuan</a>
+</div>
+</footer>
+</body></html>
+
+<!-- Profil Desa - Nagara Kembang -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profil - Desa Nagara Kembang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+          font-family: 'Material Symbols Outlined';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f7f9fb",
+                      "tertiary-fixed": "#d9e2ff",
+                      "tertiary-fixed-dim": "#b0c6ff",
+                      "surface": "#f7f9fb",
+                      "on-background": "#191c1e",
+                      "secondary-fixed": "#ffddb8",
+                      "tertiary": "#003683",
+                      "on-error": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "on-primary-container": "#90d689",
+                      "primary-fixed": "#acf4a4",
+                      "on-secondary-container": "#684000",
+                      "tertiary-container": "#184da7",
+                      "outline-variant": "#c0c9bb",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-primary-fixed-variant": "#0c5216",
+                      "primary": "#00450d",
+                      "surface-container": "#eceef0",
+                      "secondary": "#855300",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#1b5e20",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#91d78a",
+                      "surface-tint": "#2a6b2c",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#2a1700",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed": "#002203",
+                      "on-surface": "#191c1e",
+                      "primary-fixed-dim": "#91d78a",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "inverse-surface": "#2d3133",
+                      "outline": "#717a6d",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f2f4f6",
+                      "on-surface-variant": "#41493e",
+                      "secondary-container": "#fea619",
+                      "error-container": "#ffdad6",
+                      "surface-variant": "#e0e3e5",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-container": "#adc4ff",
+                      "on-tertiary-fixed": "#001945",
+                      "surface-dim": "#d8dadc",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "on-tertiary-fixed-variant": "#00429c",
+                      "surface-container-highest": "#e0e3e5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "48px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "stack-md": "16px",
+                      "stack-lg": "32px",
+                      "section-gap": "80px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "display-lg": [
+                              "Montserrat"
+                      ],
+                      "headline-md-mobile": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "title-lg": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md dark:bg-on-background/90 shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20">
+<div class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed">
+            Desa Nagara Kembang
+        </div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Beranda</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary font-bold pb-1 font-body-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors opacity-80" href="#">Profil</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pemerintahan</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Informasi</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Potensi</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pelayanan</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm hidden md:block">
+            Kontak
+        </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+<!-- Hero Title Section -->
+<header class="py-stack-lg md:py-section-gap text-center max-w-3xl mx-auto">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-stack-md">Profil Desa Nagara Kembang</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Mengenal lebih dekat sejarah, visi misi, dan kondisi geografis desa kami yang asri dan berbudaya.</p>
+</header>
+<!-- Sejarah Desa Section -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative group">
+<div class="absolute inset-0 bg-primary/10 rounded-xl transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+<img alt="Sejarah Desa" class="relative z-10 w-full h-auto aspect-[4/3] object-cover rounded-xl shadow-md" data-alt="A historic black and white or sepia-toned photograph showing the early settlement of an Indonesian village. Traditional wooden houses with thatched roofs are visible among lush tropical foliage. Local villagers in traditional clothing are seen working in a rice field in the foreground. The image has a vintage, archival feel with subtle film grain, capturing a sense of heritage and timeless community spirit within a natural, earthy setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmCkBlxLnqdQDnT-7rHjh0UQu4bLnsq9XAOuqCoecnA0_DlRgrwWlggY1F0mmp7_NM46svweOS91gxHzKbL0NSHFMEWB_Jh-DRvrB9HDBUDPLxI3mEgHu69G1umRvwzjrDEtPN5vo8CsvruNQS0qWgj8lRIG3bpvasvqy4cwQzC-Yz3q6I6z0R-1XnJnafTaj_-SeP0vrEUqBuWuk0-if_blNcJjMLUZqsMBUB6WQkYeGntWrQUN0a"/>
+</div>
+<div class="md:col-span-7 md:pl-stack-lg flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-md text-label-md w-max mb-stack-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="history">history</span>
+<span>Sejarah Desa</span>
+</div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-primary mb-stack-md">Jejak Langkah Nagara Kembang</h2>
+<div class="font-body-md text-body-md text-on-surface space-y-stack-sm">
+<p>Desa Nagara Kembang memiliki sejarah panjang yang mengakar kuat pada tradisi agraris leluhur. Terbentuk sejak abad ke-19, desa ini awalnya merupakan permukiman kecil para petani yang memanfaatkan kesuburan tanah vulkanik di lereng perbukitan. Nama "Nagara Kembang" sendiri melambangkan harapan akan wilayah yang mekar dan makmur layaknya bunga.</p>
+<p>Seiring berjalannya waktu, desa ini berkembang menjadi pusat komunitas lokal yang memegang teguh nilai-nilai gotong royong dan kearifan lokal, yang masih dilestarikan hingga kini di tengah arus modernisasi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visi & Misi Section (Bento Grid Style) -->
+<section class="mb-section-gap bg-surface-container-low rounded-[24px] p-stack-lg md:p-margin-desktop border border-surface-variant/50 shadow-sm">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-primary mb-stack-sm">Visi &amp; Misi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Arah pembangunan dan cita-cita luhur untuk kesejahteraan bersama masyarakat Desa Nagara Kembang.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Visi Card -->
+<div class="lg:col-span-1 bg-surface rounded-xl p-stack-lg shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-variant/30 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-stack-md text-primary">
+<span class="material-symbols-outlined !text-4xl" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-stack-sm">Visi</h3>
+<p class="font-body-md text-body-md text-on-surface italic">"Terwujudnya Desa Nagara Kembang yang Mandiri, Sejahtera, Berbudaya, dan Berwawasan Lingkungan melalui Tata Kelola Pemerintahan yang Baik."</p>
+</div>
+<!-- Misi Cards -->
+<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-stack-md">
+<div class="bg-surface rounded-xl p-stack-md shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-variant/30 flex gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="text-secondary shrink-0 pt-1">
+<span class="material-symbols-outlined" data-icon="agriculture">agriculture</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-1">Pemberdayaan Ekonomi</h4>
+<p class="font-caption text-caption text-on-surface-variant">Meningkatkan kesejahteraan masyarakat melalui sektor pertanian berkelanjutan dan UMKM unggulan desa.</p>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-stack-md shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-variant/30 flex gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="text-secondary shrink-0 pt-1">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-1">Peningkatan SDM</h4>
+<p class="font-caption text-caption text-on-surface-variant">Mendorong akses pendidikan dan pelatihan keterampilan vokasi untuk generasi muda desa.</p>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-stack-md shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-variant/30 flex gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="text-secondary shrink-0 pt-1">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-1">Tata Kelola Pemerintahan</h4>
+<p class="font-caption text-caption text-on-surface-variant">Mewujudkan pelayanan publik yang transparan, akuntabel, dan responsif terhadap kebutuhan warga.</p>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-stack-md shadow-[0_4px_20px_rgba(27,94,32,0.05)] border border-surface-variant/30 flex gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="text-secondary shrink-0 pt-1">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-1">Pelestarian Lingkungan</h4>
+<p class="font-caption text-caption text-on-surface-variant">Menjaga keasrian alam dan mengelola sumber daya alam desa secara bijak dan berkelanjutan.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Geografis Section -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1 md:pr-stack-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-md text-label-md w-max mb-stack-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="map">map</span>
+<span>Kondisi Geografis</span>
+</div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-primary mb-stack-md">Bentang Alam yang Subur</h2>
+<p class="font-body-md text-body-md text-on-surface mb-stack-md">Terletak di ketinggian 600 meter di atas permukaan laut, Desa Nagara Kembang dikelilingi oleh perbukitan hijau dan dilewati oleh dua aliran sungai kecil yang menyediakan irigasi sepanjang tahun untuk lahan pertanian.</p>
+<div class="grid grid-cols-2 gap-stack-sm mt-stack-md">
+<div class="bg-surface p-stack-sm rounded-lg border border-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="landscape">landscape</span>
+<div>
+<span class="block font-label-md text-label-md text-on-surface-variant">Topografi</span>
+<span class="font-title-lg text-title-lg text-primary">Perbukitan</span>
+</div>
+</div>
+<div class="bg-surface p-stack-sm rounded-lg border border-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="thermostat">thermostat</span>
+<div>
+<span class="block font-label-md text-label-md text-on-surface-variant">Suhu Rata-rata</span>
+<span class="font-title-lg text-title-lg text-primary">22°C - 28°C</span>
+</div>
+</div>
+<div class="bg-surface p-stack-sm rounded-lg border border-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="square_foot">square_foot</span>
+<div>
+<span class="block font-label-md text-label-md text-on-surface-variant">Luas Wilayah</span>
+<span class="font-title-lg text-title-lg text-primary">450 Ha</span>
+</div>
+</div>
+<div class="bg-surface p-stack-sm rounded-lg border border-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="water_drop">water_drop</span>
+<div>
+<span class="block font-label-md text-label-md text-on-surface-variant">Curah Hujan</span>
+<span class="font-title-lg text-title-lg text-primary">Tinggi</span>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 h-full min-h-[300px] md:min-h-[400px] rounded-2xl overflow-hidden shadow-md border border-surface-variant/50">
+<div class="bg-cover bg-center w-full h-full min-h-[300px]" data-alt="A breathtaking aerial view drone shot of a lush green Indonesian village nestled among rolling hills. The landscape is dominated by vibrant green terraced rice paddies and thick tropical forest. A winding rural road cuts through the scenery. The lighting is early morning golden hour, casting long soft shadows and a warm, tranquil glow over the organic, earthy landscape. The mood is peaceful and abundant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTaYi7Xo7AQGNmZ0MyoAijiIWn2fpLAWAmcrcuy-M5RyXoBt3GervozCi3sg841XaO6tWcHe28p83dLYNLlqfMe0ia3LA4cHqwy1SPQqclJlAkw4eWwPPq4T0smQtwGps-TepXHliYY_XK5KPfMcP47wKtRD00HnZzUgipPzLizzZCZ_1tlwsG2mbq2ofkBraBzFE9FOZWPXJePKYxoFJ6WsqAvanjYzav10i16JfF6iO2m93S1CgZ')"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-on-background py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter w-full">
+<div class="md:col-span-1">
+<div class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed mb-stack-md">
+                Desa Nagara Kembang
+            </div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                © 2024 Pemerintah Desa Nagara Kembang. Seluruh Hak Cipta Dilindungi.
+            </p>
+</div>
+<div class="md:col-span-3 flex flex-col md:flex-row gap-gutter justify-end items-start md:items-center font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">Kebijakan Privasi</a>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">Peta Situs</a>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary transition-all" href="#">Bantuan</a>
+</div>
+</footer>
+</body></html>
+
+<!-- Berita Desa - Nagara Kembang -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Informasi &amp; Berita - Desa Nagara Kembang</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#f7f9fb",
+                    "tertiary-fixed": "#d9e2ff",
+                    "tertiary-fixed-dim": "#b0c6ff",
+                    "surface": "#f7f9fb",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#ffddb8",
+                    "tertiary": "#003683",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-primary-container": "#90d689",
+                    "primary-fixed": "#acf4a4",
+                    "on-secondary-container": "#684000",
+                    "tertiary-container": "#184da7",
+                    "outline-variant": "#c0c9bb",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-primary-fixed-variant": "#0c5216",
+                    "primary": "#00450d",
+                    "surface-container": "#eceef0",
+                    "secondary": "#855300",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#1b5e20",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#91d78a",
+                    "surface-tint": "#2a6b2c",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#2a1700",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#002203",
+                    "on-surface": "#191c1e",
+                    "primary-fixed-dim": "#91d78a",
+                    "secondary-fixed-dim": "#ffb95f",
+                    "inverse-surface": "#2d3133",
+                    "outline": "#717a6d",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface-variant": "#41493e",
+                    "secondary-container": "#fea619",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e0e3e5",
+                    "surface-bright": "#f7f9fb",
+                    "on-tertiary-container": "#adc4ff",
+                    "on-tertiary-fixed": "#001945",
+                    "surface-dim": "#d8dadc",
+                    "on-secondary-fixed-variant": "#653e00",
+                    "on-tertiary-fixed-variant": "#00429c",
+                    "surface-container-highest": "#e0e3e5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "48px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "section-gap": "80px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "headline-md-mobile": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "title-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .custom-card-shadow {
+            box-shadow: 0 4px 20px rgba(27, 94, 32, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-surface/90 backdrop-blur-md dark:bg-on-background/90 shadow-sm">
+<div class="flex items-center gap-4">
+<span class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed">Desa Nagara Kembang</span>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-6">
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Beranda</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Profil</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pemerintahan</a>
+<!-- Active State -->
+<a class="font-body-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary font-bold pb-1 hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors opacity-80" href="#">Informasi</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Potensi</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pelayanan</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center bg-surface-container rounded-full px-3 py-1.5 focus-within:ring-2 focus-within:ring-primary transition-all">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-32 outline-none px-2 text-on-surface" placeholder="Cari..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary font-body-md text-label-md px-6 py-2 rounded-md hover:bg-primary-container transition-colors">
+                Kontak
+            </button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[104px] pb-section-gap px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto flex flex-col gap-section-gap">
+<!-- Header & Filters -->
+<section class="flex flex-col gap-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-stack-md">
+<div class="max-w-2xl">
+<h1 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-primary mb-stack-sm">Pusat Informasi &amp; Berita</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Ikuti perkembangan terbaru, pengumuman penting, dan kegiatan masyarakat di Desa Nagara Kembang.</p>
+</div>
+<div class="w-full md:w-auto flex items-center bg-surface-container-lowest border border-outline-variant rounded-md px-3 py-2 focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all custom-card-shadow">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-full md:w-64 outline-none px-3 text-on-surface" placeholder="Cari berita..." type="text"/>
+<button class="text-primary hover:text-primary-container font-body-md text-label-md pl-2 border-l border-outline-variant">Cari</button>
+</div>
+</div>
+<!-- Categories -->
+<div class="flex flex-wrap gap-stack-sm">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-body-md text-label-md transition-colors hover:bg-primary-container">Semua</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-body-md text-label-md transition-colors hover:bg-surface-container-high hover:text-on-surface">Pemerintahan</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-body-md text-label-md transition-colors hover:bg-surface-container-high hover:text-on-surface">Pembangunan</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-body-md text-label-md transition-colors hover:bg-surface-container-high hover:text-on-surface">Kegiatan</button>
+</div>
+</section>
+<!-- Featured Article -->
+<section>
+<div class="group relative rounded-xl overflow-hidden bg-surface-container-lowest custom-card-shadow transition-all duration-300 hover:-translate-y-1 hover:shadow-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-0 items-stretch">
+<div class="lg:col-span-7 relative h-64 md:h-full min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-quality, professional photograph showing an expansive view of a lush, green agricultural village bathed in warm morning light. The scene captures the organized, modern approach to local farming, harmonizing with a clean, well-maintained rural infrastructure. Deep greens and earthy tones dominate, aligning perfectly with the Corporate-Modern UI aesthetic of a trustworthy village government portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuWqHCTg5VBIrZbxCgR0i1vNeUMAJkDKwf5Z1BSkVddUnWbNGonkebpz9hPX0Ev4JyGhMq1xgwlk2GPLFGtU_hRWDqwz-38LFOA3lpFkCGNSOAmLBw5sEaj7eidcLr_G6BW3aqLJ3OwDzq8yIxYJIQdBXGB3QY3iL0o7k_okc2j-lfwqlxKxVZp6ox8NykO1JMmKwe2zMDZLK7EWMrvTnqrGCQt2HtV_BVfQ6pV7l8sZhEDUCo-ze2"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-on-background/80 to-transparent"></div>
+</div>
+<div class="lg:col-span-5 p-margin-mobile md:p-stack-lg flex flex-col justify-center relative z-10 bg-surface-container-lowest">
+<div class="flex items-center gap-stack-sm mb-stack-md">
+<span class="font-body-md text-label-md text-secondary uppercase tracking-wider">Pembangunan</span>
+<span class="text-outline-variant text-caption">•</span>
+<span class="font-body-md text-caption text-on-surface-variant">12 Oktober 2024</span>
+</div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary mb-stack-sm group-hover:text-primary-container transition-colors">Peresmian Saluran Irigasi Baru untuk Meningkatkan Produktivitas Pertanian Lokal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg line-clamp-3">Pemerintah Desa Nagara Kembang resmi membuka saluran irigasi sepanjang 2 kilometer di dusun utara. Proyek ini diharapkan dapat memastikan ketersediaan air di musim kemarau dan meningkatkan hasil panen kelompok tani sekurang-kurangnya 30% pada tahun mendatang.</p>
+<a class="inline-flex items-center gap-2 font-body-md text-label-md text-primary hover:text-secondary transition-colors w-max group/btn" href="#">
+                        Baca Selengkapnya 
+                        <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Recent News Grid -->
+<section>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-stack-lg border-b border-surface-variant pb-2">Berita Terkini</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden custom-card-shadow transition-all hover:-translate-y-1 flex flex-col h-full group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional photo of a community gathering inside a clean, modern village hall. Village officials in formal attire are presenting information to attentive citizens. The lighting is bright and even, highlighting the clear, structured communication between government and people. Subtle green banners match the portal's branding scheme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXWKm6G9_2yilFdycyNUqSc4UFaQySw5sdY_4pzDGjUWEzGVeLog_LXB3oJ20g3bE5NgAtUqPsf_tFsKnHOMsGLbDLu9BNsa1-WxDNg4Ud3FCi7Vx14oz-8oe4czwd-bhHIciXgbxUw_nljsMMLTUhqfPPzeIYVd5Qg7E0oQPrkRYOEV40mN5b1fkfy4Io3i8KRBLgfIW8s9obtH0t4czGAdCvrQ9C5B3GwTkI4TNo3nFhPc8qOXRw"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container px-2 py-1 rounded font-body-md text-caption">Kegiatan</div>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<span class="font-body-md text-caption text-on-surface-variant mb-stack-sm">10 Oktober 2024</span>
+<h4 class="font-title-lg text-title-lg text-primary mb-stack-sm line-clamp-2">Musyawarah Desa Pembahasan APBDes Tahun 2025 Berjalan Lancar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-2 flex-grow">Warga desa antusias memberikan masukan terkait prioritas pembangunan dan pemberdayaan masyarakat untuk tahun anggaran berikutnya.</p>
+<a class="inline-flex items-center font-body-md text-label-md text-primary hover:text-secondary transition-colors" href="#">
+                            Baca <span class="material-symbols-outlined text-[18px] ml-1">arrow_right_alt</span>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden custom-card-shadow transition-all hover:-translate-y-1 flex flex-col h-full group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sharp, well-lit image of a modern digital kiosk or service counter within a village administrative office. A staff member is assisting a resident. The environment is orderly, utilizing a clean white and deep green aesthetic that conveys efficiency, transparency, and modern governance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ4p6st4Sma2YrOB2gFMKBKy9GXEUXgN_3GaDbPNivy_u72WWLIm9RvCVZIDR2h1yg9vYYMrkZcLMZWCPJvwW_O_wwC5OcFm94GMI1pE6kpmwXaUv3rgJalXTfXpvyL7zYCL2slmvJOZYpPiXiJUwX16WsJIle1Ud5Kyxwoat4IxgFr8EEjymZfrPW3REp1xYXw5GyRdan4ig74POg3DvhGbDghbRp1Ofuim_lR_z6emQ8lYJVvRK6"/>
+<div class="absolute top-3 left-3 bg-surface-variant text-on-surface-variant px-2 py-1 rounded font-body-md text-caption border border-outline-variant">Pemerintahan</div>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<span class="font-body-md text-caption text-on-surface-variant mb-stack-sm">08 Oktober 2024</span>
+<h4 class="font-title-lg text-title-lg text-primary mb-stack-sm line-clamp-2">Peluncuran Layanan Administrasi Kependudukan Berbasis Digital</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-2 flex-grow">Kini pengurusan surat pengantar dan dokumen kependudukan dasar dapat diajukan melalui portal online desa untuk mempercepat pelayanan.</p>
+<a class="inline-flex items-center font-body-md text-label-md text-primary hover:text-secondary transition-colors" href="#">
+                            Baca <span class="material-symbols-outlined text-[18px] ml-1">arrow_right_alt</span>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden custom-card-shadow transition-all hover:-translate-y-1 flex flex-col h-full group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A warm, engaging photo of local artisans or farmers displaying their goods at a village market or exhibition. The lighting is natural and vibrant, showcasing the rich textures of local produce and crafts. The image feels grounded and tactile, emphasizing community potential and economic vitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGmE6Tq3LlcffIdYRnT5cmDBusDvyZhIpWUxtL_6WgUAi6lZyqEXZRpelWiSBw9ppia20uqR1iT1nDBkTLNH-suhawxpB5yaezy2pKfpPkuLLw8eNxs-McuuEWjpakQfuae_h6N9-LDYK1yM1VAGoEgWv3G1VM0NNZkvazH-LnspP8rC82WAd6CpSaQJhgyl791eHfi_F_IL4oUTcsHXMFszemVriDPcb82AuVRVUVn-_1HI-G85i9"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container px-2 py-1 rounded font-body-md text-caption">Potensi</div>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<span class="font-body-md text-caption text-on-surface-variant mb-stack-sm">05 Oktober 2024</span>
+<h4 class="font-title-lg text-title-lg text-primary mb-stack-sm line-clamp-2">Produk UMKM Lokal Nagara Kembang Tembus Pasar Kabupaten</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-2 flex-grow">Kerajinan tangan dan produk olahan hasil bumi karya warga kini mendapat pesanan rutin dari berbagai minimarket di pusat kabupaten.</p>
+<a class="inline-flex items-center font-body-md text-label-md text-primary hover:text-secondary transition-colors" href="#">
+                            Baca <span class="material-symbols-outlined text-[18px] ml-1">arrow_right_alt</span>
+</a>
+</div>
+</article>
+</div>
+<div class="mt-stack-lg flex justify-center">
+<button class="px-6 py-2 border border-outline text-on-surface font-body-md text-label-md rounded-md hover:bg-surface-variant transition-colors flex items-center gap-2">
+                    Muat Lebih Banyak <span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-surface-container-highest dark:bg-on-background">
+<div class="flex flex-col gap-4 col-span-1 md:col-span-2">
+<span class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed">Desa Nagara Kembang</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Pemerintah Desa Nagara Kembang. Seluruh Hak Cipta Dilindungi.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-primary font-bold focus:ring-2 focus:ring-primary hover:text-secondary underline decoration-2 underline-offset-4 w-max" href="#">Kebijakan Privasi</a>
+<a class="font-body-md text-body-md text-on-surface-variant focus:ring-2 focus:ring-primary hover:text-secondary underline decoration-2 underline-offset-4 w-max" href="#">Syarat &amp; Ketentuan</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant focus:ring-2 focus:ring-primary hover:text-secondary underline decoration-2 underline-offset-4 w-max" href="#">Peta Situs</a>
+<a class="font-body-md text-body-md text-on-surface-variant focus:ring-2 focus:ring-primary hover:text-secondary underline decoration-2 underline-offset-4 w-max" href="#">Bantuan</a>
+</div>
+</footer>
+</body></html>
+
+<!-- Pemerintahan Desa - Nagara Kembang -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pemerintahan Desa Nagara Kembang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f7f9fb",
+                      "tertiary-fixed": "#d9e2ff",
+                      "tertiary-fixed-dim": "#b0c6ff",
+                      "surface": "#f7f9fb",
+                      "on-background": "#191c1e",
+                      "secondary-fixed": "#ffddb8",
+                      "tertiary": "#003683",
+                      "on-error": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "on-primary-container": "#90d689",
+                      "primary-fixed": "#acf4a4",
+                      "on-secondary-container": "#684000",
+                      "tertiary-container": "#184da7",
+                      "outline-variant": "#c0c9bb",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-primary-fixed-variant": "#0c5216",
+                      "primary": "#00450d",
+                      "surface-container": "#eceef0",
+                      "secondary": "#855300",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#1b5e20",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#91d78a",
+                      "surface-tint": "#2a6b2c",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#2a1700",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed": "#002203",
+                      "on-surface": "#191c1e",
+                      "primary-fixed-dim": "#91d78a",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "inverse-surface": "#2d3133",
+                      "outline": "#717a6d",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f2f4f6",
+                      "on-surface-variant": "#41493e",
+                      "secondary-container": "#fea619",
+                      "error-container": "#ffdad6",
+                      "surface-variant": "#e0e3e5",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-container": "#adc4ff",
+                      "on-tertiary-fixed": "#001945",
+                      "surface-dim": "#d8dadc",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "on-tertiary-fixed-variant": "#00429c",
+                      "surface-container-highest": "#e0e3e5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "48px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "stack-md": "16px",
+                      "stack-lg": "32px",
+                      "section-gap": "80px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "display-lg": [
+                              "Montserrat"
+                      ],
+                      "headline-md-mobile": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "title-lg": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-overlay {
+            background: linear-gradient(to bottom, rgba(0, 69, 13, 0.4), rgba(0, 69, 13, 0.7));
+        }
+        .shadow-ambient {
+            box-shadow: 0 4px 20px rgba(27, 94, 32, 0.05);
+        }
+        .hover-lift {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(27, 94, 32, 0.1);
+        }
+        .org-line-v {
+            width: 2px;
+            background-color: #c0c9bb; /* outline-variant */
+            margin: 0 auto;
+        }
+        .org-line-h {
+            height: 2px;
+            background-color: #c0c9bb;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-surface/90 backdrop-blur-md dark:bg-on-background/90 shadow-sm bg-surface dark:bg-on-background">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[32px]">account_balance</span>
+<span class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed">Desa Nagara Kembang</span>
+</div>
+<nav class="hidden md:flex gap-6">
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Beranda</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Profil</a>
+<a class="font-body-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary font-bold pb-1 opacity-80 transition-all" href="#">Pemerintahan</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Informasi</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Potensi</a>
+<a class="font-body-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Pelayanan</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center bg-surface-container-high rounded-full px-4 py-2 border border-outline-variant focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-32 focus:w-48 transition-all" placeholder="Cari..." type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-md hover:bg-primary-container transition-colors">
+                Kontak
+            </button>
+</div>
+</header>
+<!-- Mobile Nav Spacer -->
+<div class="h-20"></div>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[409px] min-h-[300px] flex items-center justify-center">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A sweeping, majestic wide-angle photograph of an Indonesian village hall (Balai Desa) nestled amongst lush green rice terraces. The building features traditional Javanese architectural elements blended with modern administrative facilities. The lighting is golden hour, casting long, warm shadows and highlighting the deep forest greens of the landscape and the crisp white walls of the building. The overall mood is dignified, established, and deeply connected to nature." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGAY8bLZaKjvS1dd_4b2TiTNB0Ttgwcp_6mc11pwB0ZR-KJ5kGzyv49lK_hynWOYh8K3mt2tZY9p3XyzSSRmyQFwwe-gd9OPfYhJ22Q1SHMXKaJReYqLt4GuwR1v7-OPSk3w_vvYC28oAReg0EXFP8k_DpRU5lE9rQoQZ3P0nKno2QIjn1De_eRpFOyHhmGE_Wn7ohZD8kiPNV3spOJoSM10vgXAyAL214kjwZxAH5ES5N5DoYLX8k')"></div>
+<div class="absolute inset-0 bg-overlay"></div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop text-on-primary">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-sm text-on-primary">Pemerintahan Desa</h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto opacity-90 text-on-primary">
+                    Mengenal lebih dekat struktur organisasi dan jajaran pengurus Desa Nagara Kembang yang berdedikasi melayani masyarakat.
+                </p>
+</div>
+</section>
+<!-- Organizational Structure Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md text-headline-md-mobile md:text-headline-md text-primary mb-stack-sm">Struktur Organisasi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    Bagan susunan kepengurusan Pemerintahan Desa Nagara Kembang.
+                </p>
+</div>
+<!-- Simplified Flowchart Diagram using CSS Flexbox -->
+<div class="w-full overflow-x-auto pb-8">
+<div class="min-w-[800px] flex flex-col items-center">
+<!-- Kepala Desa -->
+<div class="bg-surface shadow-ambient rounded-xl p-6 border border-outline-variant text-center w-64 hover-lift z-10">
+<div class="w-20 h-20 mx-auto rounded-xl bg-surface-container-high mb-4 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot portrait of a distinguished Indonesian man in his 50s, serving as a village head. He is wearing a formal dark green administrative uniform (Pakaian Dinas Harian) with official insignia. The background is a subtle, out-of-focus village office setting with natural light. The mood is authoritative yet approachable, reflecting modern corporate governance in a rural setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9mmi-B2ajtPJ-JJVpEbPlz2Zl1N_vbTzzIyvbH85XnSuBBiB8O0Fdhriyc2JsqOfqloxATpsRPqz6f2sO0M4i0X02VQTtURK2SWXnCNhlv5OXaprOYaIK2kn3xEMEdadVpwEsFu9NAbH0jdIxHSFnChiuqlMVxZiYNFeQGGXNONvVGBfElvaqeOpDgbD-B98IHEkWtWt1czQq-SAuzNECb3jtkP6KcNRB7EmlgkjCZN22GYqQSF_k"/>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Budi Santoso</h3>
+<p class="font-label-md text-label-md text-secondary">Kepala Desa</p>
+</div>
+<div class="org-line-v h-8"></div>
+<!-- Sekretaris -->
+<div class="bg-surface shadow-ambient rounded-xl p-4 border border-outline-variant text-center w-56 hover-lift z-10">
+<h3 class="font-title-lg text-body-lg font-bold text-primary mb-1">Siti Aminah</h3>
+<p class="font-label-md text-label-md text-secondary">Sekretaris Desa</p>
+</div>
+<div class="org-line-v h-8"></div>
+<!-- Horizontal connection -->
+<div class="w-[600px] flex flex-col items-center">
+<div class="org-line-h w-full"></div>
+<div class="flex justify-between w-full relative">
+<!-- Kaur lines -->
+<div class="org-line-v h-8 absolute left-0"></div>
+<div class="org-line-v h-8 absolute left-1/2 -translate-x-1/2"></div>
+<div class="org-line-v h-8 absolute right-0"></div>
+</div>
+</div>
+<!-- Kasi / Kaur Row -->
+<div class="flex justify-between w-[640px] mt-8 gap-4">
+<div class="bg-surface shadow-ambient rounded-xl p-4 border border-outline-variant text-center w-48 hover-lift">
+<h4 class="font-title-lg text-body-md font-bold text-on-surface">Agus Riyanto</h4>
+<p class="font-label-md text-caption text-secondary">Kaur Keuangan</p>
+</div>
+<div class="bg-surface shadow-ambient rounded-xl p-4 border border-outline-variant text-center w-48 hover-lift">
+<h4 class="font-title-lg text-body-md font-bold text-on-surface">Rina Mulyani</h4>
+<p class="font-label-md text-caption text-secondary">Kaur Perencanaan</p>
+</div>
+<div class="bg-surface shadow-ambient rounded-xl p-4 border border-outline-variant text-center w-48 hover-lift">
+<h4 class="font-title-lg text-body-md font-bold text-on-surface">Dedi Setiawan</h4>
+<p class="font-label-md text-caption text-secondary">Kasi Pemerintahan</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Officials Grid Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="mb-stack-lg border-b border-outline-variant pb-4">
+<h2 class="font-headline-md text-headline-md-mobile md:text-headline-md text-primary">Jajaran Aparatur Desa</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl shadow-ambient overflow-hidden hover-lift flex flex-col items-center p-6 text-center border border-surface-variant">
+<img class="w-32 h-32 rounded-xl object-cover mb-stack-md shadow-sm" data-alt="A professional headshot of an Indonesian man in a dark green uniform, smiling warmly. Natural light, office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ol_um-dgiQ2-IYx1Zrp5_gLRsHMurG_BeTHfQZTjHehe6DBwsOFzR_uiD4QjPEoDHXXqFN8GP2I1CuZHetW4UqriN0CploUAGD8joyqW_A-g1LwI6ksIPNUSSFngqIWDBiEmyjC2MWHHvwSpZ6e89xGZWJqMlP2s8fCucOkJ2yFG0JMKZCaBzjcv-GbRuukLHB_A07mHUIxy_UOouWHPH5i_WE4heWjDIjp7HlQQsraIkHP7OHVV"/>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Budi Santoso</h3>
+<p class="font-label-md text-label-md text-primary mb-4">Kepala Desa</p>
+<div class="flex gap-3 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">call</span></a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl shadow-ambient overflow-hidden hover-lift flex flex-col items-center p-6 text-center border border-surface-variant">
+<img class="w-32 h-32 rounded-xl object-cover mb-stack-md shadow-sm" data-alt="A professional headshot of an Indonesian woman wearing a hijab and dark green uniform. Confident expression, brightly lit indoor background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCyd89gjmyVWeglyrZNnLO4xD_2TBG7xCPsJpOhrWSSwT6dUSm7KMyZpeqcHcw3rXOI0qM96ckSMpR3WW39Jd0N8gBPck6B5qZkJ8oq1FL51rhmGy2q2rQWc1TKgrqaRAZ6jk28j0kQbTmAzO8DM0iLMIEteXLJrc7OK2I4-6cQIlV1c8yMBYCZjlyWsszmPpIlNVxca2vpM6LYku5CYRy2F53dj5hv5C-BievI09FYQgA6fFxHcYa"/>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Siti Aminah</h3>
+<p class="font-label-md text-label-md text-primary mb-4">Sekretaris Desa</p>
+<div class="flex gap-3 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">call</span></a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl shadow-ambient overflow-hidden hover-lift flex flex-col items-center p-6 text-center border border-surface-variant">
+<img class="w-32 h-32 rounded-xl object-cover mb-stack-md shadow-sm" data-alt="A professional headshot of a young Indonesian man in official uniform. Corporate aesthetic, soft depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm-m0pAWBqjEBpPQxkELRkG_Uzj51YH7756i7p3Xf7olzUnK_Sb1yRbJ1tLFmsgquwLAhYqu3xevO4uIZEvqYs9R5iOJc7TyAZa4dd0B8p_0Wdz_82AejYpF0dfZdXIotNfQhw39f4jqpdad-L-WIg7QTHLXNJBXcQs1b0j6VIU2n_gk8FjpxU9Yo9UX2pbSZO12EDxoziUHv3RSwJK1l2b1GiWiyCfYrZTAukG1tLXYhadnyD7aw4"/>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Agus Riyanto</h3>
+<p class="font-label-md text-label-md text-primary mb-4">Kaur Keuangan</p>
+<div class="flex gap-3 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl shadow-ambient overflow-hidden hover-lift flex flex-col items-center p-6 text-center border border-surface-variant">
+<img class="w-32 h-32 rounded-xl object-cover mb-stack-md shadow-sm" data-alt="A professional headshot of an Indonesian woman in uniform. Warm smile, corporate lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmg5_aDx3_Cli2CWjIQAlJTGH4b3BmypRz8PGf9urlzqMkE2Z0RblASt6NimIYonUdDQcrgCouSWcjNcNzl8Yq9H7g9fREZw1fF7A3ZAuds0cEYg_qMWou-93DONuUMS0VdMsCVFfnk20cSV--M87H5uTjgxcjiaJAUMMoCPyCIM16uup9SetPUqYYS6cHS9rGBq4wmp4aYecdgdwXr55orZpA7yXxg5DkmlAisl0-fRPBwaVNloB4"/>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Rina Mulyani</h3>
+<p class="font-label-md text-label-md text-primary mb-4">Kaur Perencanaan</p>
+<div class="flex gap-3 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface rounded-xl shadow-ambient overflow-hidden hover-lift flex flex-col items-center p-6 text-center border border-surface-variant">
+<img class="w-32 h-32 rounded-xl object-cover mb-stack-md shadow-sm" data-alt="A professional headshot of a middle-aged Indonesian man in uniform. Serious but approachable look, well-lit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPHaFlLNrbWO8tOz6YqSvl4qMX5ZqVUo0ZJT5UUpJhIKe_Tkw5xq6LgOvkJ5a2194vR6e102aCdpI97Doop6iUBm97hFt8CqZfQcSYMetqE2IiQuVAACexc1OAps-lqW5oudocf4lnM3yjRemRMn0syJjHidyInFloRPW7J6NbS7ixKo1lW_ESLUyMsH0Rn1w1LckUBSSThcgwnm4SEC7iHDkszp7DjGRYToAmKo_57ZlT6r7zEEuW"/>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Dedi Setiawan</h3>
+<p class="font-label-md text-label-md text-primary mb-4">Kasi Pemerintahan</p>
+<div class="flex gap-3 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface rounded-xl shadow-ambient overflow-hidden hover-lift flex flex-col items-center p-6 text-center border border-surface-variant">
+<img class="w-32 h-32 rounded-xl object-cover mb-stack-md shadow-sm" data-alt="A professional headshot of an Indonesian man in uniform. Outdoor natural light background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEeqqn6FDBmgNhLl_emAdbx-QAhZk9rq7_Rhc1GYuoD10PHVdrkptBt8GAOCjBcjGwq3V86sYrRlQAEfF4w4XiOYZoclxsKF91aqH6nsGvZ2bilVMWjFxyCQDUGmfcWl_6Xt-_o1FCQlQJ-74WXYd5cVL1_aJPcc7qQMzjIbwpUoa69MgPrSS0yxQY0j1VCAX8jMbjwvuOgtT5xmjhdzeO89Ou8YK9A7UyFP3LJ3EdXiGbLbp5ujzC"/>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Hendra Saputra</h3>
+<p class="font-label-md text-label-md text-primary mb-4">Kepala Dusun I</p>
+<div class="flex gap-3 text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">call</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-surface-container-highest dark:bg-on-background bg-surface-container-highest dark:bg-surface-container">
+<div class="md:col-span-1">
+<span class="font-display-lg text-title-lg font-bold text-primary dark:text-primary-fixed block mb-stack-sm">Desa Nagara Kembang</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">
+                Membangun desa mandiri, sejahtera, dan berbudaya melalui tata kelola pemerintahan yang transparan dan inovatif.
+             </p>
+</div>
+<div class="md:col-span-2 flex flex-col md:flex-row gap-gutter md:justify-around">
+<div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold mb-stack-sm">Tautan</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary inline-block" href="#">Kebijakan Privasi</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary inline-block" href="#">Syarat &amp; Ketentuan</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary inline-block" href="#">Peta Situs</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-2 underline-offset-4 focus:ring-2 focus:ring-primary inline-block" href="#">Bantuan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary font-bold mb-stack-sm">Kontak</h4>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">location_on</span> Jl. Balai Desa No.1</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">mail</span> info@nagarakembang.desa.id</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">call</span> (021) 1234-5678</li>
+</ul>
+</div>
+</div>
+<div class="md:col-span-1 flex flex-col justify-end border-t border-outline-variant md:border-none pt-stack-md md:pt-0">
+<p class="font-body-md text-caption text-on-surface-variant md:text-right">
+                © 2024 Pemerintah Desa Nagara Kembang. Seluruh Hak Cipta Dilindungi.
+            </p>
+</div>
+</footer>
+</body></html>
