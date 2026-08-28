@@ -27,10 +27,10 @@ export function Footer() {
               Membangun desa mandiri, sejahtera, dan berbudaya melalui tata kelola pemerintahan yang transparan, inovatif, dan berpusat pada masyarakat.
             </p>
             
-            <div className="flex items-center gap-5 mt-2">
+            <div className="flex items-center gap-6 mt-4">
               <img src="/logo.png" alt="Logo Desa" className="h-12 w-auto object-contain drop-shadow-sm" />
               <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-12 w-auto object-contain drop-shadow-sm" />
-              <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-12 w-auto object-contain drop-shadow-sm" />
+              <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-12 w-auto object-contain drop-shadow-sm scale-[1.35]" />
             </div>
             
             {/* Social Media SVG Icons */}
