@@ -2,18 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
-import { getDemografi, getBerita, getSettings, getPemerintahan } from "@/lib/data";
+import { getDemografi, getBerita, getSettings, getPemerintahan, getSlideshow } from "@/lib/data";
+
+const DEFAULT_SLIDES = [
+  "https://lh3.googleusercontent.com/aida-public/AB6AXuCVx2vtOyvHygY1_AQWh8NiyWDSyIpKJLCeg7JCpcV-zsHhewNUv90_7gcQi6v1KEv15zx8AOFKIHTrEzgCNtWsQwTken8J3sfZHxN4E8jxoL_AdPLWVTjgDRfO4vIMub_9jCxhWKaS1eEhHsaLwYHrGNbnerldNxAcKMKNYNgL2ph06UUp6aOwDaVszbhiasz1uQpMExODKObvgYKOz62NRQvufzVAuLV77Nh0Z_q9HY2SEP55Rl4B",
+  "https://lh3.googleusercontent.com/aida-public/AB6AXuDuWqHCTg5VBIrZbxCgR0i1vNeUMAJkDKwf5Z1BSkVddUnWbNGonkebpz9hPX0Ev4JyGhMq1xgwlk2GPLFGtU_hRWDqwz-38LFOA3lpFkCGNSOAmLBw5sEaj7eidcLr_G6BW3aqLJ3OwDzq8yIxYJIQdBXGB3QY3iL0o7k_okc2j-lfwqlxKxVZp6ox8NykO1JMmKwe2zMDZLK7EWMrvTnqrGCQt2HtV_BVfQ6pV7l8sZhEDUCo-ze2",
+  "https://lh3.googleusercontent.com/aida-public/AB6AXuBXWKm6G9_2yilFdycyNUqSc4UFaQySw5sdY_4pzDGjUWEzGVeLog_LXB3oJ20g3bE5NgAtUqPsf_tFsKnHOMsGLbDLu9BNsa1-WxDNg4Ud3FCi7Vx14oz-8oe4czwd-bhHIciXgbxUw_nljsMMLTUhqfPPzeIYVd5Qg7E0oQPrkRYOEV40mN5b1fkfy4Io3i8KRBLgfIW8s9obtH0t4czGAdCvrQ9C5B3GwTkI4TNo3nFhPc8qOXRw",
+  "https://lh3.googleusercontent.com/aida-public/AB6AXuCTaYi7Xo7AQGNmZ0MyoAijiIWn2fpLAWAmcrcuy-M5RyXoBt3GervozCi3sg841XaO6tWcHe28p83dLYNLlqfMe0ia3LA4cHqwy1SPQqclJlAkw4eWwPPq4T0smQtwGps-TepXHliYY_XK5KPfMcP47wKtRD00HnZzUgipPzLizzZCZ_1tlwsG2mbq2ofkBraBzFE9FOZWPXJePKYxoFJ6WsqAvanjYzav10i16JfF6iO2m93S1CgZ"
+];
 
 export default function Home() {
   const demografi = getDemografi();
   const beritaTerbaru = getBerita().slice(0, 3);
   const settings = getSettings();
   const kades = getPemerintahan().find(p => p.position.toLowerCase().includes("kepala desa"));
+  const slideshow = getSlideshow();
+  const slideImages = slideshow && slideshow.length > 0 ? slideshow.map(s => s.url) : DEFAULT_SLIDES;
 
   return (
     <div className="flex flex-col w-full overflow-hidden">
       {/* Hero Section */}
-      <HeroSlideshow />
+      <HeroSlideshow slideImages={slideImages} />
 
       {/* Sambutan Kepala Desa Section */}
       <section className="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">

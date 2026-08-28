@@ -62,6 +62,11 @@ export interface Transparansi {
   tipe: string;
 }
 
+export interface Slideshow {
+  id: string;
+  url: string;
+}
+
 export interface Profil {
   namaDesa: string; kecamatan: string; kabupaten: string; provinsi: string;
   kodePos: string; alamat: string; sejarah: string; deskripsi: string;
@@ -103,6 +108,10 @@ export function getGaleri(): Galeri[] {
 }
 export function getTransparansi(): Transparansi[] {
   return readData<Transparansi[]>("transparansi.json");
+}
+
+export function getSlideshow(): Slideshow[] {
+  return readData<Slideshow[]>("slideshow.json");
 }
 
 export function getDemografi(): Demografi {
