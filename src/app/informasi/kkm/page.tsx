@@ -26,9 +26,9 @@ export default function KKMPage() {
       <section className="relative w-full h-[350px] min-h-[300px] flex items-center justify-center bg-surface-container-high border-b border-outline-variant">
         <div className="absolute inset-0 bg-primary/5"></div>
         <SlideUp className="relative z-10 text-center px-margin-mobile md:px-margin-desktop text-on-surface" delay={0.2}>
-          <div className="flex justify-center gap-6 mb-6">
-            <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-20 w-auto object-contain drop-shadow-md grayscale transition-all duration-300 hover:grayscale-0" />
-            <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-20 w-auto object-contain drop-shadow-md grayscale transition-all duration-300 hover:grayscale-0" />
+          <div className="flex justify-center gap-6 mb-6 items-center">
+            <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-20 w-20 object-contain drop-shadow-md" />
+            <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-20 w-20 object-contain drop-shadow-md" />
           </div>
           <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-sm text-primary">
             Tim KKM Desa Nagarakembang
@@ -64,9 +64,9 @@ export default function KKMPage() {
               <p className="font-label-md text-primary tracking-wide uppercase mb-4">
                 Dipersembahkan Oleh
               </p>
-              <div className="flex gap-4 mb-4">
-                <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-                <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <div className="flex gap-6 mb-4 items-center">
+                <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-20 w-20 object-contain drop-shadow-sm" />
+                <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-20 w-20 object-contain drop-shadow-sm" />
               </div>
               <p className="text-2xl font-bold text-on-surface mt-2">
                 Tim KKM Institut Budi Utomo Nasional
