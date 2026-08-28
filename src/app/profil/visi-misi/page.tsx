@@ -6,7 +6,9 @@ export const metadata = {
 };
 
 export default function VisiMisiPage() {
-  const data = getVisiMisi();
+  const data = getVisiMisi() || {};
+  const visi = data.visi || "Belum ada data visi.";
+  const misi = data.misi || [];
 
   return (
     <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap w-full overflow-hidden pt-32">
@@ -28,27 +30,33 @@ export default function VisiMisiPage() {
             </div>
             <h3 className="font-title-lg text-title-lg text-primary mb-stack-sm">Visi</h3>
             <p className="font-body-md text-body-md text-on-surface italic whitespace-pre-line">
-              "{data.visi}"
+              "{visi}"
             </p>
           </FadeIn>
           
           {/* Misi Cards */}
           <StaggerContainer className="lg:col-span-2 grid grid-cols-1 gap-4 md:gap-stack-md">
-            {data.misi.map((misiItem, idx) => (
-              <StaggerItem key={idx} className="bg-surface rounded-xl p-6 shadow-ambient border border-surface-variant/30 flex gap-4 hover:-translate-y-1 transition-transform duration-300">
-                <div className="text-secondary shrink-0 pt-1">
-                  <span className="material-symbols-outlined">flag</span>
-                </div>
-                <div>
-                  <h4 className="font-label-md text-label-md text-on-surface font-bold mb-1">
-                    Misi {idx + 1}
-                  </h4>
-                  <p className="font-caption text-caption text-on-surface-variant">
-                    {misiItem}
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
+            {misi.length > 0 ? (
+              misi.map((misiItem, idx) => (
+                <StaggerItem key={idx} className="bg-surface rounded-xl p-6 shadow-ambient border border-surface-variant/30 flex gap-4 hover:-translate-y-1 transition-transform duration-300">
+                  <div className="text-secondary shrink-0 pt-1">
+                    <span className="material-symbols-outlined">flag</span>
+                  </div>
+                  <div>
+                    <h4 className="font-label-md text-label-md text-on-surface font-bold mb-1">
+                      Misi {idx + 1}
+                    </h4>
+                    <p className="font-caption text-caption text-on-surface-variant">
+                      {misiItem}
+                    </p>
+                  </div>
+                </StaggerItem>
+              ))
+            ) : (
+              <div className="bg-surface rounded-xl p-6 shadow-ambient border border-surface-variant/30 flex justify-center items-center h-full">
+                <p className="text-on-surface-variant italic">Belum ada data misi.</p>
+              </div>
+            )}
           </StaggerContainer>
         </div>
       </div>
