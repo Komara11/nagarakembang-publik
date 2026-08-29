@@ -73,7 +73,7 @@ export interface Profil {
 }
 export interface VisiMisi { visi: string; misi: string[]; }
 export interface Demografi { totalPenduduk: number; lakiLaki: number; perempuan: number; totalKK: number; }
-export interface Settings { namaWebsite: string; email: string; telepon: string; whatsapp: string; instagram: string; facebook: string; lokasi: string; jamOperasional: string; }
+export interface Settings { namaWebsite: string; email: string; telepon: string; whatsapp: string; instagram: string; facebook: string; lokasi: string; jamOperasional: string; mapUrl: string; }
 
 // Public read-only accessors
 export function getBerita(): Berita[] {

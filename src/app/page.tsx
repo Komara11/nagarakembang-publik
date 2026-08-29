@@ -182,11 +182,9 @@ export default function Home() {
                 </div>
                 <div className="w-full">
                   <h4 className="font-title-lg text-label-md text-on-surface font-bold">Jam Pelayanan Kantor</h4>
-                  <ul className="font-body-md text-body-md text-on-surface-variant mt-2 space-y-2">
-                    <li className="flex justify-between items-center w-full max-w-[250px]"><span className="font-bold">Senin - Kamis</span> <span>08.00 - 15.00</span></li>
-                    <li className="flex justify-between items-center w-full max-w-[250px]"><span className="font-bold">Jumat</span> <span>08.00 - 11.30</span></li>
-                    <li className="flex justify-between items-center w-full max-w-[250px]"><span className="font-bold text-error">Sabtu - Minggu</span> <span className="text-error">Tutup</span></li>
-                  </ul>
+                  <p className="font-body-md text-body-md text-on-surface-variant mt-2 whitespace-pre-line">
+                    {settings.jamOperasional || "Senin - Jumat, 08:00 - 16:00"}
+                  </p>
                 </div>
               </div>
               <div className="w-full h-[1px] bg-outline-variant/50 my-2"></div>
@@ -210,7 +208,7 @@ export default function Home() {
           
           <FadeIn delay={0.3} className="rounded-xl overflow-hidden shadow-ambient h-[350px] md:h-[400px] lg:h-full lg:min-h-[400px] border border-surface-variant">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.468819077598!2d107.5768!3d-6.9077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+              src={settings.mapUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.468819077598!2d107.5768!3d-6.9077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"} 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
