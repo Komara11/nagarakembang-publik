@@ -4,7 +4,7 @@ import { getSettings, getProfil } from "@/lib/data";
 export function Footer() {
   const settings = getSettings();
   const profil = getProfil();
-  
+
   return (
     <footer className="w-full bg-[#0f172a] text-slate-300 pt-16 md:pt-24 pb-8 px-margin-mobile md:px-margin-desktop border-t-4 border-primary">
       <div className="max-w-container-max mx-auto">
@@ -19,35 +19,35 @@ export function Footer() {
                     {settings.namaWebsite.split(' ')[0]} <span className="text-primary">{settings.namaWebsite.split(' ').slice(1).join(' ')}</span>
                   </>
                 ) : (
-                  <>Nagara <span className="text-primary">Kembang</span></>
+                  <>Nagara<span className="text-primary">Kembang</span></>
                 )}
               </span>
             </div>
             <p className="font-body-md text-body-lg leading-relaxed max-w-md text-slate-400">
               Membangun desa mandiri, sejahtera, dan berbudaya melalui tata kelola pemerintahan yang transparan, inovatif, dan berpusat pada masyarakat.
             </p>
-            
+
             <div className="flex items-center gap-6 mt-4">
               <img src="/logo.png" alt="Logo Desa" className="h-12 w-auto object-contain drop-shadow-sm" />
               <img src="/tim-kkm/logo_kampus.png" alt="Logo Kampus" className="h-12 w-auto object-contain drop-shadow-sm" />
               <img src="/tim-kkm/logo-kkm.png" alt="Logo KKM" className="h-12 w-auto object-contain drop-shadow-sm scale-[1.35]" />
             </div>
-            
+
             {/* Social Media SVG Icons */}
             <div className="flex items-center gap-4 mt-2">
               {settings?.facebook && (
                 <a href={settings.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-[#0f172a] transition-all duration-300 group">
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+                    <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
                   </svg>
                 </a>
               )}
               {settings?.instagram && (
                 <a href={settings.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-[#0f172a] transition-all duration-300 group">
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"/>
-                    <circle cx="16.806" cy="7.207" r="1.078"/>
-                    <path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.952-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"/>
+                    <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z" />
+                    <circle cx="16.806" cy="7.207" r="1.078" />
+                    <path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.952-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z" />
                   </svg>
                 </a>
               )}
@@ -110,7 +110,7 @@ export function Footer() {
                   <span className="material-symbols-outlined text-[20px]">location_on</span>
                 </div>
                 <p className="font-body-md text-slate-400 pt-2 leading-snug">
-                  {profil?.alamat || "Jl. Balai Desa No.1, RT 02/05, Nagara Kembang, Jawa Barat"}
+                  {settings?.lokasi || profil?.alamat || "Jl. Balai Desa No.1, RT 02/05, Nagara Kembang, Jawa Barat"}
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -129,6 +129,16 @@ export function Footer() {
                   {settings?.telepon || "(021) 1234-5678"}
                 </a>
               </div>
+              {settings?.jamOperasional && (
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center shrink-0 text-primary">
+                    <span className="material-symbols-outlined text-[20px]">schedule</span>
+                  </div>
+                  <p className="font-body-md text-slate-400">
+                    {settings.jamOperasional}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
