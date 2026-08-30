@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBeritaBySlug } from "@/lib/data";
 
-export default function InformasiDetailPage({ params }: { params: { id: string } }) {
-  const berita = getBeritaBySlug(params.id);
+export default async function InformasiDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const berita = getBeritaBySlug(resolvedParams.id);
 
   if (!berita) {
     notFound();

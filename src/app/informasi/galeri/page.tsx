@@ -1,7 +1,7 @@
 import { getGaleri } from "@/lib/data";
 import { SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 import Image from "next/image";
-
+import Link from "next/link";
 export const metadata = {
   title: "Galeri & Media | Desa Nagara Kembang",
   description: "Dokumentasi visual kegiatan, pembangunan, dan keindahan Desa Nagara Kembang",
@@ -36,11 +36,11 @@ export default function GaleriPage() {
           {galeriItems.length > 0 ? (
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {galeriItems.map((item) => (
-                <StaggerItem 
-                  key={item.id} 
-                  className="bg-surface rounded-2xl overflow-hidden shadow-ambient hover:shadow-lg transition-all duration-300 border border-surface-variant flex flex-col group cursor-pointer"
-                >
-                  <div className="relative aspect-video overflow-hidden bg-surface-variant">
+                <Link href={`/informasi/galeri/${item.id}`} key={item.id} className="block group cursor-pointer">
+                  <StaggerItem 
+                    className="bg-surface rounded-2xl overflow-hidden shadow-ambient group-hover:shadow-lg transition-all duration-300 border border-surface-variant flex flex-col h-full"
+                  >
+                    <div className="relative aspect-video overflow-hidden bg-surface-variant">
                     {/* Default placeholder if no cover */}
                     <img
                       src={item.cover || "https://lh3.googleusercontent.com/aida-public/AB6AXuBXWKm6G9_2yilFdycyNUqSc4UFaQySw5sdY_4pzDGjUWEzGVeLog_LXB3oJ20g3bE5NgAtUqPsf_tFsKnHOMsGLbDLu9BNsa1-WxDNg4Ud3FCi7Vx14oz-8oe4czwd-bhHIciXgbxUw_nljsMMLTUhqfPPzeIYVd5Qg7E0oQPrkRYOEV40mN5b1fkfy4Io3i8KRBLgfIW8s9obtH0t4czGAdCvrQ9C5B3GwTkI4TNo3nFhPc8qOXRw"}
@@ -70,7 +70,8 @@ export default function GaleriPage() {
                       {item.description || "Tidak ada deskripsi tersedia untuk album ini."}
                     </p>
                   </div>
-                </StaggerItem>
+                  </StaggerItem>
+                </Link>
               ))}
             </StaggerContainer>
           ) : (

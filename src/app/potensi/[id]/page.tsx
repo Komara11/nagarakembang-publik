@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPotensi } from "@/lib/data";
 
-export default function PotensiDetailPage({ params }: { params: { id: string } }) {
-  const potensi = getPotensi().find(p => p.id === params.id);
+export default async function PotensiDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const potensi = getPotensi().find(p => p.id === resolvedParams.id);
   
   if (!potensi) {
     notFound();

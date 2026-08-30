@@ -147,7 +147,7 @@ export function Footer() {
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <div className="flex flex-col gap-1">
             <p className="font-body-md text-sm text-slate-500">
-              © {new Date().getFullYear()} Pemerintah Desa {settings?.namaWebsite || "Nagara Kembang"}. Seluruh Hak Cipta Dilindungi.
+              © {new Date().getFullYear()} Pemerintah Desa {settings?.namaWebsite || "Nagarakembang"}. Seluruh Hak Cipta Dilindungi.
             </p>
             <p className="font-body-md text-xs text-slate-600">
               Developed by <a href="https://rahesa-komara-r7o2.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-primary-container transition-colors">Komara</a> from <a href="https://www.clovercode.shop" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline hover:text-primary-container transition-colors">Clovercode</a>
